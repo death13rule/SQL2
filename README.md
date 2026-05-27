@@ -89,36 +89,19 @@ stores(id, name, city, address)
 
 Например, таблица users:
 
-Shard 1
-id 1–1000
-
-Shard 2
-id 1000–2000
-
-Shard 3
-id 2000-...
+Shard 1 - id 1–1000
+Shard 2 - id 1000–2000
+Shard 3 - id 2000-...
 
 Для books — по категории:
-
-Shard 1
-fiction
-
-Shard 2
-science
-
-Shard 3 
-education
+Shard 1 - fiction
+Shard 2 - science
+Shard 3 - education
 
 Для stores — по городам:
-
-Shard 1
-Moscow
-
-Shard 2
-St.Petersburg
-
-Shard 3
-Khabarovsk
+Shard 1 - Moscow
+Shard 2 - St.Petersburg
+Shard 3 - Khabarovsk
 
 Схема:
 ```
@@ -147,7 +130,6 @@ Khabarovsk
 ```
 
 Где:
-
 U1/U2/U3 — шарды пользователей
 B1/B2/B3 — шарды книг
 S1/S2/S3 — шарды магазинов
