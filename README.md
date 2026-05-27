@@ -87,8 +87,7 @@ stores(id, name, city, address)
 
 Разбиваем данные внутри таблиц.
 
-Например, таблица users:
-
+Для users:
 Shard 1 - id 1–1000,
 Shard 2 - id 1000–2000,
 Shard 3 - id 2000-...
